@@ -1,4 +1,6 @@
 {
   "item.firstredomelmod.bismuth": "Bismuth",
-  "item.firstredomelmod.raw_bismuth": "Raw_Bismuth"
+  "item.firstredomelmod.raw_bismuth": "Raw Bismuth",
+
+  "block.firstredomelmod.bismuth_block": "Bismuth Block"
 }

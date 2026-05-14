@@ -1,6 +1,7 @@
 package net.programm.testingmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.programm.testingmod.block.ModBlocks;
 import net.programm.testingmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,6 +35,7 @@ public class FirstMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +52,10 @@ public class FirstMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BISMUTH_BLOCK);
         }
     }
 

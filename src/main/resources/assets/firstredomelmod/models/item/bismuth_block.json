@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/bismuth_block",
+  "textures": {
+    "all": "firstredomelmod:block/bismuth_block"
+  }
+}
